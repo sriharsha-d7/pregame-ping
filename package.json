@@ -1,0 +1,27 @@
+{
+  "name": "pregame-ping",
+  "version": "0.1.0",
+  "description": "Alexa+ MCP server: when and where your team plays, with reminders and score updates on your schedule",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/e2e.mjs && node test/espn.test.mjs && node test/route.test.mjs",
+    "start": "node src/sim.js",
+    "mcp": "node src/server.js"
+  },
+  "keywords": [
+    "alexa",
+    "mcp",
+    "sports",
+    "reminders"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  }
+}
